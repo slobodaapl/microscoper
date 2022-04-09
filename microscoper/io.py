@@ -183,7 +183,7 @@ def run():
         print("======================")
         exit()
 
-    jb.start_vm(class_path=bf.JARS, max_heap_size=arg.mem)
+    jb.start_vm(class_path=bf.JARS, max_heap_size="16G")
 
     pbar_files = tqdm.tqdm(files)
 
